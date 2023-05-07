@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lanchonete_cardapio/app/core/ui/vakinha_ui.dart';
 import 'package:lanchonete_cardapio/app/routes/splash_routes.dart';
 
 
@@ -13,6 +14,7 @@ class VakinhaBurgerMainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return   GetMaterialApp(
       title: 'Vakinha Burger',
+      theme: VakinhaUI.theme,
       getPages: [
         ...SplashRouters.routers
       ],
