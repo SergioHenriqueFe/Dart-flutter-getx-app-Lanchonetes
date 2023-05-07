@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lanchonete_cardapio/app/routes/splash_routes.dart';
 
 
 void main() {
@@ -10,9 +11,11 @@ class VakinhaBurgerMainApp extends StatelessWidget {
   const VakinhaBurgerMainApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const  GetMaterialApp(
+    return   GetMaterialApp(
       title: 'Vakinha Burger',
-      getPages: [],
+      getPages: [
+        ...SplashRouters.routers
+      ],
 
     );
   
