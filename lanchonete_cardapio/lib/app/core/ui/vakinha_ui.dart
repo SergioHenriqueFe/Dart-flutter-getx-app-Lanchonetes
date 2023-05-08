@@ -4,7 +4,7 @@ class VakinhaUI {
   VakinhaUI._();
   static final ThemeData theme = ThemeData(
     primaryColor: const Color(0xFF007D21),
-    primaryColorDark: const Colors(0xFF0034f),
+    primaryColorDark: const Color(0xFF0034f),
     fontFamily: 'mplus1',
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
