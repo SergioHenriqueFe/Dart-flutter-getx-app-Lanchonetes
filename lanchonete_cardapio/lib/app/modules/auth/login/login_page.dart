@@ -90,10 +90,12 @@ class _LoginPageState extends VakinhaState<LoginPage, LoginController> {
                               onPressed: (() {
                                 final formValid =
                                     _formKey.currentState?.validate() ?? false;
-                                    if(formValid){
-                                      
-                                    }
-                                }),
+                                if (formValid) {
+                                  controller.login(
+                                      email: _emailEC.text,
+                                      password: _passwordEC.text,);
+                                }
+                              }),
                               width: context.width,
                             ),
                           ),
