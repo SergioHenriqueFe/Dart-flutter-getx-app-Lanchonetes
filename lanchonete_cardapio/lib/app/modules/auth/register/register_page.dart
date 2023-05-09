@@ -59,7 +59,7 @@ class RegisterPage extends StatelessWidget {
                   child: VakinhaButton(
                     label: 'Cadastrar',
                     onPressed: (() {
-                      Get.find<RegisterController>().qualquer();
+                      //Get.find<RegisterController>().qualquer();
                     }),
                     width: context.width,
                   ),
