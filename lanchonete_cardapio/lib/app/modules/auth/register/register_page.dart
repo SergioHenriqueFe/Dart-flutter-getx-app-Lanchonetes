@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lanchonete_cardapio/app/modules/auth/register/register_controller.dart';
 
 import '../../../core/ui/vakinha_ui.dart';
 import '../../../core/ui/widgets/vakinha_appbar.dart';
@@ -31,10 +32,9 @@ class RegisterPage extends StatelessWidget {
                     color: context.theme.primaryColorDark,
                   ),
                 ),
-                 Text(
+                Text(
                   'Preencha o cadastro abaixo para criar a sua conta',
                   style: context.textTheme.bodyLarge,
-                  
                 ),
                 const SizedBox(
                   height: 30,
@@ -58,11 +58,12 @@ class RegisterPage extends StatelessWidget {
                 Center(
                   child: VakinhaButton(
                     label: 'Cadastrar',
-                    onPressed: (() {}),
+                    onPressed: (() {
+                      Get.find<RegisterController>().qualquer();
+                    }),
                     width: context.width,
                   ),
                 ),
-                
               ],
             )),
           ),
